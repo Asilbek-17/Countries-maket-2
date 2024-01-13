@@ -1,0 +1,229 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    background: #FAFAFA;
+}
+
+.container{
+    width: 100%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    background: #FFF;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    transition: .5s;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-btn {
+    border: none;
+    background-color: transparent;
+    color: #111517;
+    font-family: Nunito Sans;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.header-title {
+    color: #111517;
+    font-family: Nunito Sans;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    transition: .5s;
+}
+
+.hero {
+    padding-top: 48px;
+    padding-bottom: 48px;
+    transition: .5s;
+}
+
+.hero-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 48px;
+}
+
+.hero-input {
+    width: 480px;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    padding-left: 74px;
+    padding-right: 18px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+    border: none;
+    transition: .5s;
+}
+
+.hero-select {
+    width: 200px;
+    padding: 18px 24px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+    border: none;
+    transition: .5s;
+}
+
+.hero-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.hero-box {
+    width: 264px;
+    border-radius: 5px;
+    background: #FFF;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+    margin-bottom: 67px;
+    padding-bottom: 46px;
+    transition: .5s;
+}
+
+.hero-title {
+    color: #111517;
+    font-family: Nunito Sans;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 26px; /* 144.444% */
+    margin-top: 24px;
+    margin-left: 24px;
+    margin-bottom: 16px;
+    transition: .5s;
+}
+
+.hero-text {
+    color: #111517;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 16px; /* 114.286% */
+    margin-left: 24px;
+    margin-bottom: 8px;
+    transition: .5s;
+}
+
+.header-dark {
+    background: #2B3844;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+    transition: .5s;
+}
+
+.header-dark * {
+    color: #FFF;
+    transition: .5s;
+}
+
+.hero-dark {
+    background: #202C36;
+    transition: .5s;
+}
+
+.hero-dark * {
+    color: #FFF;
+    transition: .5s;
+}
+
+.input-dark {
+    border-radius: 5px;
+    background: #2B3844;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+    transition: .5s;
+}
+
+.input-dark::placeholder {
+    color: #FFF;
+    transition: .5s;
+}
+
+.select-dark {
+    border-radius: 5px;
+    background: #2B3844;
+    box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+    transition: .5s;
+}
+
+.hero-box-dark {
+    border-radius: 5px;
+    background: #2B3844;
+    box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+    transition: .5s;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 1110px) {
+    .hero-wrapper {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 810px) {
+    .hero-form {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .hero-select {
+        width: 480px;
+    }
+}
+
+@media (max-width: 510px) {
+    .hero-input {
+        width: 320px;
+    }
+
+    .hero-select {
+        width: 320px;
+    }
+}
+
+@media (max-width: 410px) {
+    .header-wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .hero-input {
+        width: 280px;
+    }
+
+    .hero-select {
+        width: 280px;
+    }
+}
